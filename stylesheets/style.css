@@ -1,0 +1,109 @@
+@font-face {
+  font-family:"LeanForeword";
+  src: url("./LeanForeword.ttf") format("truetype");
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1, h2, h3, h4 {
+    font-family:"LeanForeword";
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 1em;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+.garage {
+  width: 40%;
+  background-color: white;
+}
+.garage-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('https://i.ytimg.com/vi/ATWsZObujfs/maxresdefault.jpg');
+  background-size: cover;
+  background-position: 45% 56%;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  filter: brightness(150%);
+}
+.garage-logo {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: -50px;
+  filter: brightness(75%);
+}
+.garage-logo img {
+  width: 100%;
+}
+.garage-info {
+  margin-top: 60px;
+}
+.garage-info .btn-cta {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.garage-info .btn-cta:hover {
+  background-color: black;
+  color: white;
+}
+.garage-description {
+  padding: 16px;
+  color: gray;
+}
+.cars-list {
+  width: 75%;
+  background-color: lightgray;
+  padding: 20px;
+  overflow: scroll;
+}
+.car {
+  display: flex;
+  background-color: white;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+.car:hover {
+  opacity: 1;
+}
+.car-image {
+  width: 140px;
+}
+.car-image img {
+  width: 100%;
+}
+.car-info {
+  padding: 10px;
+}
+.car-form {
+  padding: 0px 20px;
+}
+.car-form input {
+  margin-bottom: 5px;
+}
+.car-body {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 150px);
+}
+.car-plate {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.car-destroy {
+  align-self: flex-end;
+}
