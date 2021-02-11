@@ -1,17 +1,17 @@
-import { fetchCars, addCar } from './car';
+import { addCar, fetchCars } from './car';
 
 // TODO: give a badass name to your garage
-const myBadAssGarage = "badass-tomo";
+const myBadAssGarage = "yarn-garage";
+
 // DON'T CHANGE THIS LINE
 document.querySelector("#garage-name").innerText = myBadAssGarage.replace(/-/g, " ");
 // //////////////////////
 
-// Functions calls
-fetchCars(myBadAssGarage);
+// element selection
+const button = document.querySelector("#submit-btn");
 
-// Events handling
-const btn = document.querySelector("#submit-btn");
-btn.addEventListener("click", (event) => {
-  event.preventDefault();
-  addCar(myBadAssGarage);
-});
+// function calls
+fetchCars();
+
+// event listeners
+button.addEventListener("click", addCar);
